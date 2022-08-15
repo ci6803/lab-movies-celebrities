@@ -7,3 +7,9 @@
   <p>{{genre}}</p>
   <p>{{catchPhrase}}</p>
 {{/each}}
+
+<form action="/movies/{{id}}/delete" method="POST">
+  <button>Delete</button>
+  <a href="/movies/{{id}}/edit">edit</a>
+  <a href="/movies/{{id}}/edit" method="POST">Edit</a>
+</form>
