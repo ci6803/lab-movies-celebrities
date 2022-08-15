@@ -1,4 +1,7 @@
 <h2>Movie list</h2>
-{{#each allMovie}}
-  <h3>{{this.name}}</h3>
-{{/each}}
+<div>
+  {{#each allMovie}}
+    <h3>{{title}}</h3>
+    <a href="/movies/{{_id}}">See details</a>
+  {{/each}}
+</div>
